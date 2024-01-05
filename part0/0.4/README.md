@@ -1,7 +1,7 @@
 ### 0.4: New note diagram
 The following sequence diagram depits the chain of events caused by opening the page https://studies.cs.helsinki.fi/exampleapp/notes
 
-```
+```mermaid
 sequenceDiagram
     participant browser
     participant server
