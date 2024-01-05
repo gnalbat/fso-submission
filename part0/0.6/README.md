@@ -6,7 +6,7 @@ sequenceDiagram
     participant browser
     participant server
 
-    Note right of browser: Browser appends the form input to the list and sends a POST request to server
+    Note right of browser: Browser appends the form input to the list and re-renders the notes and sends a POST request to server
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa <br>Content-type: application/json ({content:	"test", date:	"2024-01-05T17:25:57.134Z"})
     activate server
     Note left of server: Server sends a response, in this case in a JSON-format containing a message
